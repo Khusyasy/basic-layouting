@@ -1,0 +1,41 @@
+.dt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 65rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.dt-img {
+  width: 100%;
+  aspect-ratio: 19/9;
+}
+
+.dt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dt-content ul {
+  list-style: circle;
+  padding: 0 1.5rem;
+}
+
+.dt-content ol {
+  list-style: decimal;
+  padding: 0 1.5rem;
+}
+
+.dt-content li {
+  margin: 0.25rem 0;
+}
+
