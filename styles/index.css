@@ -128,3 +128,11 @@ body {
 .card-content {
   padding: 0.5rem;
 } 
+
+.underline::after {
+  content: '';
+  display: block;
+  width: min(55%, 4rem);
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}
