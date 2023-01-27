@@ -44,6 +44,7 @@ body {
 .navbar-links {
   text-decoration: none;
   display: flex;
+  gap: 1rem;
 }
 
 .navbar-item {
@@ -55,7 +56,7 @@ body {
 .navbar-item a {
   text-decoration: none;
   color: var(--black);
-  font-size: 1.2rem;
+  transition: 0.3s;
 }
 
 .navbar-item a:hover {
@@ -87,3 +88,43 @@ body {
   align-items: center;
   padding: 1rem;
 }
+
+.menu-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 17rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--black);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.3);
+}
+
+.card-img {
+  width: 100%;
+  height: 17rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 0.5rem;
+} 
