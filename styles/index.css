@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+  --primary-color: rgb(123, 238, 123);
+  --white: rgb(243, 255, 244);
+  --black: rgb(16, 19, 15);
+  --grey: rgb(112, 121, 111);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.navbar-links {
+  text-decoration: none;
+  display: flex;
+}
+
+.navbar-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+.navbar-item a:hover {
+  color: var(--grey);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: url('/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner > * {
+  color: var(--white);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
