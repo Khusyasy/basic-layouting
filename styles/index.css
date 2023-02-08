@@ -20,6 +20,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: var(--white);
 }
 
 .navbar {
@@ -67,6 +68,35 @@ body {
 
 .navbar-item a:hover {
   color: var(--grey);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.search-bar input {
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: var(--black) 1px solid;
+}
+
+.search-bar button {
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border: var(--black) 1px solid;
+  background-color: var(--primary-color);
+  color: var(--black);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: var(--white);
 }
 
 .banner {

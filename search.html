@@ -23,22 +23,21 @@
         </ul>
       </div>
     </div>
-    <div class="banner" id="banner">
-      <h1>Welcome to DeliciKhus</h1>
-      <p>Most Delicious Recipes of All Time</p>
-    </div>
     <div class="container">
-      <h2 class="underline" id="menu">Featured Menu</h2>
       <form method="get" action="/search.html" class="search-bar">
-        <input type="text" name="q" placeholder="Search">
+        <input id="q" type="text" name="q" placeholder="Search">
         <button type="submit">Search</button>
       </form>
+      <h2 class="underline" id="result">
+        <!-- DYNAMIC CONTENT -->
+      </h2>
       <div class="menu-container">
         <!-- DYNAMIC CONTENT -->
-        </div>
+      </div>
     </div>
     <script src="/scripts/api.js"></script>
     <script src="/scripts/card.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src="/scripts/search.js"></script>
   </body>
+
 </html>

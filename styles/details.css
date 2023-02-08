@@ -13,17 +13,18 @@
   max-width: 65rem;
   margin: 1rem 0;
   color: var(--black);
+  text-align: justify;
 }
 
 .dt-img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
 }
 
 .dt-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .dt-content ul {
@@ -40,9 +41,13 @@
   margin: 1.25rem 0;
 }
 
+.dt-content p {
+  margin: 0.5rem 0;
+}
+
 @media only screen and (min-width: 768px) {
   .dt-img {
     width: 100%;
-    aspect-ratio: 19/9;
+    aspect-ratio: 2/1;
   }
 }
