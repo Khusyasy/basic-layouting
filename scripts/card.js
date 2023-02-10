@@ -1,6 +1,7 @@
 function createCard(data) {
   const card = document.createElement('a');
   card.classList.add('card');
+  card.classList.add('animate');
   card.href = `/details.html?id=${data.idMeal}`;
 
   const cardImgDiv = document.createElement('div');
@@ -22,5 +23,8 @@ function createCard(data) {
 
   card.appendChild(cardContent);
 
+  setTimeout(() => {
+    card.classList.remove('animate');
+  }, 500);
   return card;
 }

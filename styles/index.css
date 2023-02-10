@@ -8,7 +8,7 @@
   --primary-color: rgb(123, 238, 123);
   --white: rgb(243, 255, 244);
   --black: rgb(16, 19, 15);
-  --grey: rgb(112, 121, 111);
+  --grey: rgb(131, 140, 130);
 }
 
 * {
@@ -141,10 +141,16 @@ body {
   justify-content: space-between;
   width: 100%;
   border-radius: 0.5rem;
+  border: 1px solid var(--white);
   text-decoration: none;
   color: var(--black);
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  opacity: 1;
+}
+
+.card.animate {
+  opacity: 0;
 }
 
 .card:hover {
@@ -155,6 +161,7 @@ body {
   width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: var(--grey);
 }
 
 .card-img img {
