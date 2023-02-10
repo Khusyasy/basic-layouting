@@ -11,7 +11,9 @@ async function main() {
     searchInputEl.value = query;
     resultEl.innerText = `Search results for "${query}"`;
   
+    loadingSpinner(true);
     const meals = await getSearchResult(query);
+    loadingSpinner(false);
     if (!meals || meals.length === 0) {
       const infoEl = document.createElement('h2');
       infoEl.innerText = 'No results found';

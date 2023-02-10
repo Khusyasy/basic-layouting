@@ -4,7 +4,9 @@ async function main() {
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get('id');
 
+  loadingSpinner(true);
   const meal = await getMealById(id);
+  loadingSpinner(false);
 
   if (!meal) {
     const infoEl = document.createElement('h1');
